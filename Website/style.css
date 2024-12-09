@@ -2,6 +2,7 @@
 
 *{
     text-decoration: none;
+    font-family: 'poppins';
 }
 html{
     scroll-behavior: smooth;
@@ -666,4 +667,89 @@ img {
         transform: translateZ(0px);
         opacity: 1;
     }
+}
+.paraaaa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #121212;
+    color: white;
+    font-size: 40px;
+}
+.paraaaa p{
+    margin: 40px;
+}
+.paraaaa p{
+    animation-name: moveee;
+    animation: moveee 6s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes moveee {
+    from{
+        filter: blur(5px);
+        opacity: 0;
+        transform: translateX(45px);
+    }
+    to{
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-image: url(Images/black-topaz-upscale-4x.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+.box9 {
+    padding-top: 40px;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    font-size: 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.box9::after,
+.box9::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    --angle: 0deg;
+    background-image: conic-gradient(
+        from var(--angle), orange, rgb(255, 0, 0), rgb(252, 161, 125)
+    );
+    animation: autoRotate 2s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 5px;
+    box-sizing: unset;
+}
+.box9::after {
+    filter: blur(20px);
+}
+@keyframes autoRotate {
+    to {
+        --angle: 360deg;
+    }
+}
+@property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
 }
