@@ -32,9 +32,6 @@ body{
 .para1:nth-child(1){
     margin-top: 50px;
 }
-.para1{
-    margin-top: 20px;
-}
 .para2{
     font-size: 20px;
     margin-right: 20px;
