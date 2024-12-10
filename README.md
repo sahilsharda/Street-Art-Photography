@@ -6,5 +6,5 @@ This project aimed to capture the vibrant spirit of urban creativity, focusing o
 Each member brought unique perspectives and skills to the table, contributing to the project's depth and diversity.
 
 references we used:
-Mural section: https://codepen.io/ramzibach-the-styleful/pen/LYoYejb
-Sculptures: https://www.lundevweb.com/2024/06/creating-3d-image-slider-with-css-only.html
+Mural section: https://www.youtube.com/watch?v=Reu0hHbis5w&t=46s
+Sculptures: https://www.youtube.com/watch?v=yqaLSlPOUxM&t=22s
