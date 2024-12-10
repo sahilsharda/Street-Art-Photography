@@ -17,9 +17,9 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: #1C1C1C; /* Dark base color */
-            overflow: hidden; /* Prevent scrolling */
-            position: relative; /* To position pseudo-elements correctly */
+            background: #1C1C1C; 
+            overflow: hidden; 
+            position: relative; 
         }
 
         body::before {
@@ -29,10 +29,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(#FF8C00, #FF4500); /* Orange gradient */
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Star shape */
-            animation: rotate 15s linear infinite; /* Add rotation effect */
-            z-index: 0; /* Ensure it stays behind content */
+            background: linear-gradient(#FF8C00, #FF4500); 
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); 
+            animation: rotate 15s linear infinite; 
+            z-index: 0; 
         }
 
         @keyframes rotate {
@@ -82,7 +82,7 @@
         }
 
         .container .card:hover {
-            transform: translateY(-10px); /* Adds a slight lift on hover */
+            transform: translateY(-10px); 
         }
 
         .container .card .content {
@@ -111,14 +111,14 @@
             font-size: 1.8em;
             color: #fff;
             z-index: 1;
-            margin-bottom: 10px; /* Add some space below the heading */
+            margin-bottom: 10px; 
         }
 
         .container .card .content p {
             font-size: 1em;
             color: #fff;
             font-weight: 300;
-            margin-bottom: 15px; /* Add some space below the paragraph */
+            margin-bottom: 15px; 
         }
 
         .container .card .content a {
@@ -126,7 +126,7 @@
             position: relative;
             display: inline-block;
             padding: 8px 20px;
-            background: #FF8C00; /* Orange button color */
+            background: #FF8C00;
             color: #fff;
             border-radius: 20px;
             text-decoration: none;
@@ -136,8 +136,8 @@
         }
 
         .container .card .content a:hover {
-            background: #FF4500; /* Change background color on hover */
-            color: #fff; /* Change text color on hover */
+            background: #FF4500;
+            color: #fff;
         }
     </style>
 </head>
