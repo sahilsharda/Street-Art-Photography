@@ -309,7 +309,7 @@ img {
     padding-bottom: 10px;
     font-size: 40px;
     color: white;
-
+    font-size: 25px;
     background:#121212;
 }
 @keyframes fade-in{
@@ -461,7 +461,7 @@ img {
 .pp{
     margin-top: 10px;
     padding-top: 10px;
-    font-size: 40px;
+    font-size: 25px;
     color:rgb(255, 255, 255);
     margin: 40px;
     background:#121212;
@@ -670,7 +670,7 @@ img {
     padding-bottom: 20px;
     background-color: #121212;
     color: white;
-    font-size: 40px;
+    font-size: 25px;
 }
 .paraaaa p{
     margin: 40px;
