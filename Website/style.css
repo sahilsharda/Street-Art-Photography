@@ -115,6 +115,12 @@ img {
     left: 0;
     top: 0;
     position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+img.loaded {
+    opacity: 1;
 }
 
 .container2 {
@@ -277,6 +283,7 @@ img {
     flex: 1 1 0;
     cursor: pointer;
     border-radius: 40px;
+    transform: scale(1.02);
 }
 
 .header {
@@ -993,5 +1000,94 @@ img {
     .box9 a {
         padding: 10px 20px;
         font-size: 14px;
+    }
+}
+
+/* Fix for dead clicks and improve interactivity */
+button,
+a,
+.card,
+.box9,
+.floating {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:active,
+a:active,
+.card:active,
+.box9:active {
+    transform: scale(0.95);
+}
+
+/* Add hover effects for better feedback */
+button:hover,
+a:hover {
+    opacity: 0.8;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Fix for touch devices */
+@media (hover: none) {
+
+    button:active,
+    a:active,
+    .card:active,
+    .box9:active {
+        opacity: 0.7;
+    }
+}
+
+/* Add loading state for images */
+img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+/* Add loading indicator */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Prevent text selection on buttons */
+button,
+a {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Add focus states for accessibility */
+button:focus,
+a:focus {
+    outline: 2px solid orange;
+    outline-offset: 2px;
+}
+
+/* Fix for mobile touch targets */
+@media screen and (max-width: 768px) {
+
+    button,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

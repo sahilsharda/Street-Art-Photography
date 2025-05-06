@@ -149,5 +149,37 @@
 	</div>
 	</div>
 </body>
+<script>
+	// Handle image loading
+	document.addEventListener('DOMContentLoaded', function () {
+		const images = document.querySelectorAll('img');
+		images.forEach(img => {
+			if (img.complete) {
+				img.classList.add('loaded');
+			} else {
+				img.addEventListener('load', function () {
+					img.classList.add('loaded');
+				});
+			}
+		});
+	});
+
+	// Prevent dead clicks on links
+	document.querySelectorAll('a').forEach(link => {
+		link.addEventListener('click', function (e) {
+			if (!this.getAttribute('href')) {
+				e.preventDefault();
+			}
+		});
+	});
+
+	// Add loading indicator
+	window.addEventListener('load', function () {
+		const loader = document.querySelector('.loading');
+		if (loader) {
+			loader.style.display = 'none';
+		}
+	});
+</script>
 
 </html>
